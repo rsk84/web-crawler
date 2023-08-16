@@ -1,0 +1,17 @@
+{
+  "name": "simple-web-crawler",
+  "description": "description",
+  "authors": "Ryan Kang",
+  "version": "1.0.0",
+  "main": "src/main.js",
+  "scripts": {
+    "start": "cd src && node main.js",
+    "test": "jest"
+  },
+  "devDependencies": {
+    "jest": "^29.6.2"
+  },
+  "dependencies": {
+    "jsdom": "^22.1.0"
+  }
+}
