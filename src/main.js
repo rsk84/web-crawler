@@ -1,6 +1,6 @@
 const { exit } = require('process');
 const { crawlPage } = require('./crawler.js');
-const { printReport } = require('./report.js')
+const { reportToCSV } = require('./report.js')
 
 async function main() {
     const args = process.argv;
@@ -19,7 +19,7 @@ async function main() {
     console.log(`baseURL set as ${args[2]}`);
     
     pages = await crawlPage(baseURL, baseURL, {});
-    printReport(pages);
+    await reportToCSV(pages);
 }
 
 main();
