@@ -66,7 +66,7 @@ let crawlPage = async (baseURL, currentURL, pages) => {
     } else {
         pages[url] = 1;
     }
-
+    
     let htmlBody = '';
     try {
         const res = await fetch(currentURL);
